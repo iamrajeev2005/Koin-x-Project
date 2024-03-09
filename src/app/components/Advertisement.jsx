@@ -3,7 +3,7 @@ import React from "react";
 function Advertisement() {
   return (
     <div className="bg-blue-600 text-white py-10 px-5 rounded-xl flex items-center justify-center flex-col">
-      <h1 className="font-bold text-xl w-2/3 text-center leading-9">
+      <h1 className="font-bold text-xl w-[70%] text-center leading-9 pb-4">
         Get Started with KoinX for FREE
       </h1>
       <p className="text-[1vw] text-zinc-100 text-center">

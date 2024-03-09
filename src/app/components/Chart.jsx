@@ -8,7 +8,7 @@ function Chart() {
       <div className="w-[70%] h-[80vh] bg-white rounded-xl overflow-hidden">
         <TradingViewWidget />
       </div>
-      <div className="w-[30%] h-[50vh]">
+      <div className="w-[30%] h-[40vh]">
         <Rightsidebar />
       </div>
     </div>
