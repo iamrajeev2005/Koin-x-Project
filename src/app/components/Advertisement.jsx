@@ -16,7 +16,7 @@ function Advertisement() {
         }
       />
       <button className="py-2 px-4 bg-white text-zinc-900 font-bold rounded-lg">
-        Get Started for FREE <i class="ri-arrow-right-line"></i>
+        Get Started for FREE <i className="ri-arrow-right-line"></i>
       </button>
     </div>
   );
