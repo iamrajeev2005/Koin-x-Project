@@ -3,6 +3,7 @@ import TradingViewWidget from "./TradingViewWidget";
 import Rightsidebar from "./Rightsidebar";
 import Tabs from "./Tabs";
 import Sentiments from "./Sentiments";
+import About from "./About";
 
 function Chart() {
   return (
@@ -16,6 +17,9 @@ function Chart() {
         </div>
         <div>
           <Sentiments/>
+        </div>
+        <div>
+          <About/>
         </div>
       </div>
       <div className="w-[30%] h-[40vh]">
