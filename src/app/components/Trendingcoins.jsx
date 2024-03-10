@@ -11,7 +11,6 @@ function Trendingcoins() {
     // console.log(data?.coins);
     const topCoins = data?.coins;
     const top3Coins = topCoins.slice(0, 3);
-    console.log(top3Coins);
     setTrending(top3Coins);
   };
 
