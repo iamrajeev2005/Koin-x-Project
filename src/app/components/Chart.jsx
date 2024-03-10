@@ -6,6 +6,7 @@ import Sentiments from "./Sentiments";
 import About from "./About";
 import Tokenomics from "./Tokenomics";
 import Team from "./Team";
+import Footer from "./Footer";
 
 function Chart() {
   return (
