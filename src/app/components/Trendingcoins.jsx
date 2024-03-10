@@ -1,33 +1,67 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 function Trendingcoins() {
+  const [trending, setTrending] = useState(null);
+  const getTrending = async () => {
+    const response = await fetch(
+      `https://api.coingecko.com/api/v3/search/trending`
+    );
+    const data = await response.json();
+    // console.log(data?.coins);
+    const topCoins = data?.coins;
+    const top3Coins = topCoins.slice(0, 3);
+    console.log(top3Coins);
+    setTrending(top3Coins);
+  };
+
+  useEffect(() => {
+    getTrending();
+  }, []);
   return (
-    <div className="bg-white w-full rounded-lg mt-4 py-4 px-5">
-      <h1 className="font-bold text-black text-xl pb-3">
-        Trending Coins (24H)
-      </h1>
-      <div className="flex items-center justify-between pb-3">
-        <h3 className="font-bold text-zinc-900">Ethereum(ETH)</h3>
-        <div className=" bg-green-100 text-green-900 flex items-center rounded-lg pr-1">
-          <i className="ri-arrow-drop-up-fill text-3xl"></i>
-          <h4 className="text-sm">8.21%</h4>
+    <div>
+      {trending && (
+        <div className="bg-white w-full rounded-lg mt-4 py-4 px-5">
+          <h1 className="font-bold text-black text-xl pb-3">
+            Trending Coins (24H)
+          </h1>
+          {trending.map((item, index) => {
+            console.log(item);
+            return (
+              <div
+                key={index}
+                className="flex items-center justify-between pb-3"
+              >
+                <div className="flex items-center justify-start pb-3 gap-2">
+                  <img
+                    className="h-5 w-5 rounded-full object-cover"
+                    src={`${item?.item?.small}`}
+                    alt="logo"
+                  />
+                  <h3 className="font-bold text-sm text-zinc-900">
+                    {item.item.name}({item?.item?.symbol})
+                  </h3>
+                </div>
+                <div
+                  className={` flex items-center rounded-lg pr-1 ${
+                    item?.item?.data?.price_change_percentage_24h?.usd < 0
+                      ? "bg-red-100 text-red-500"
+                      : "bg-green-100 text-green-900"
+                  }`}
+                >
+                  <i className="ri-arrow-drop-up-fill text-3xl"></i>
+                  <h4 className="text-sm">
+                    {item?.item?.data?.price_change_percentage_24h?.usd.toFixed(
+                      2
+                    )}
+                    %
+                  </h4>
+                </div>
+              </div>
+            );
+          })}
         </div>
-      </div>
-      <div className="flex items-center justify-between pb-3">
-        <h3 className="font-bold text-zinc-900">Bitcoin(BTC)</h3>
-        <div className=" bg-green-100 text-green-900 flex items-center rounded-lg pr-1">
-          <i className="ri-arrow-drop-up-fill text-3xl"></i>
-          <h4 className="text-sm">5.26%</h4>
-        </div>
-      </div>
-      <div className="flex items-center justify-between">
-        <h3 className="font-bold text-zinc-900">Polygon(MATIC)</h3>
-        <div className=" bg-green-100 text-green-900 flex items-center rounded-lg pr-1">
-          <i className="ri-arrow-drop-up-fill text-3xl"></i>
-          <h4 className="text-sm">4.32%</h4>
-        </div>
-      </div>
+      )}
     </div>
   );
 }
