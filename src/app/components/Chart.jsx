@@ -5,6 +5,7 @@ import Tabs from "./Tabs";
 import Sentiments from "./Sentiments";
 import About from "./About";
 import Tokenomics from "./Tokenomics";
+import Team from "./Team";
 
 function Chart() {
   return (
@@ -17,13 +18,16 @@ function Chart() {
           <Tabs />
         </div>
         <div>
-          <Sentiments/>
+          <Sentiments />
         </div>
         <div>
-          <About/>
+          <About />
         </div>
         <div>
-          <Tokenomics/>
+          <Tokenomics />
+        </div>
+        <div>
+          <Team />
         </div>
       </div>
       <div className="w-[30%] h-[40vh]">
