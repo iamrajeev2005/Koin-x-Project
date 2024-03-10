@@ -2,6 +2,7 @@ import React from "react";
 import TradingViewWidget from "./TradingViewWidget";
 import Rightsidebar from "./Rightsidebar";
 import Tabs from "./Tabs";
+import Sentiments from "./Sentiments";
 
 function Chart() {
   return (
@@ -12,6 +13,9 @@ function Chart() {
         </div>
         <div>
           <Tabs />
+        </div>
+        <div>
+          <Sentiments/>
         </div>
       </div>
       <div className="w-[30%] h-[40vh]">
