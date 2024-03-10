@@ -4,6 +4,7 @@ import Rightsidebar from "./Rightsidebar";
 import Tabs from "./Tabs";
 import Sentiments from "./Sentiments";
 import About from "./About";
+import Tokenomics from "./Tokenomics";
 
 function Chart() {
   return (
@@ -20,6 +21,9 @@ function Chart() {
         </div>
         <div>
           <About/>
+        </div>
+        <div>
+          <Tokenomics/>
         </div>
       </div>
       <div className="w-[30%] h-[40vh]">
