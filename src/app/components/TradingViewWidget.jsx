@@ -28,8 +28,8 @@ function TradingViewWidget() {
   return (
     <div>
       {data && (
-        <div>
-          <div className="flex items-center gap-2 p-5">
+        <div className="relative">
+          <div className="flex items-center gap-2 p-5 max-md:absolute max-md:-top-20 max-md:px-3">
             <div className="h-8 w-8">
               <img
                 src="https://cryptologos.cc/logos/bitcoin-btc-logo.png"
@@ -42,7 +42,7 @@ function TradingViewWidget() {
               Rank #1
             </button>
           </div>
-          <div className="flex items-start">
+          <div className="flex items-start py-5">
             <div className="px-5">
               <h1 className="text-3xl font-bold text-zinc-900 mb-1">
                 ${formatUSD(data.bitcoin.usd)}
@@ -60,9 +60,7 @@ function TradingViewWidget() {
                 }`}
               >
                 <i className="ri-arrow-drop-up-fill text-3xl"></i>
-                <h4
-                  className={`text-sm`}
-                >
+                <h4 className={`text-sm`}>
                   {data.bitcoin.usd_24h_change.toFixed(2)}%
                 </h4>
               </div>
