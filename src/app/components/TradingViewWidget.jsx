@@ -52,9 +52,17 @@ function TradingViewWidget() {
               </h3>
             </div>
             <div>
-              <div className=" bg-green-100 text-green-900 flex items-center rounded-lg pr-1">
+              <div
+                className={` bg-green-100 text-green-900 flex items-center rounded-lg pr-1 ${
+                  data.bitcoin.usd_24h_change < 0
+                    ? "bg-red-100 text-red-500"
+                    : "bg-green-100 text-green-900"
+                }`}
+              >
                 <i className="ri-arrow-drop-up-fill text-3xl"></i>
-                <h4 className="text-sm">
+                <h4
+                  className={`text-sm`}
+                >
                   {data.bitcoin.usd_24h_change.toFixed(2)}%
                 </h4>
               </div>
