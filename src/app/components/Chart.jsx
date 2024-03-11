@@ -12,7 +12,7 @@ function Chart() {
   return (
     <div className="flex mt-10 gap-4">
       <div className="w-[70%] max-md:w-[100%] relative">
-        <div className="h-[80vh] max-md:h-[70vh] max-md:mt-16 bg-white rounded-xl">
+        <div className="h-[90vh] max-md:h-[70vh] max-md:mt-16 bg-white rounded-xl">
           <TradingViewWidget />
         </div>
         <div>

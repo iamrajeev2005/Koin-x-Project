@@ -55,47 +55,51 @@ export default function BasicTabs() {
           borderColor: "divider",
         }}
       >
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label="basic tabs example"
-        >
-          <Tab
-            className="capitalize font-bold text-zinc-900 "
-            label="Overview"
-            {...a11yProps(0)}
-          />
-          <Tab
-            className="capitalize font-bold text-zinc-900 "
-            label="Fundamentals"
-            {...a11yProps(1)}
-          />
-          <Tab
-            className="capitalize font-bold text-zinc-900 "
-            label="News Insights"
-            {...a11yProps(2)}
-          />
-          <Tab
-            className="capitalize font-bold text-zinc-900 "
-            label="Sentiments"
-            {...a11yProps(3)}
-          />
-          <Tab
-            className="capitalize font-bold text-zinc-900 "
-            label="Team"
-            {...a11yProps(4)}
-          />
-          <Tab
-            className="capitalize font-bold text-zinc-900 "
-            label="Technicals"
-            {...a11yProps(5)}
-          />
-          <Tab
-            className="capitalize font-bold text-zinc-900 "
-            label="Tokenomics"
-            {...a11yProps(6)}
-          />
-        </Tabs>
+        <div>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            variant="scrollable"
+            scrollButtons="auto"
+            aria-label="basic tabs example"
+          >
+            <Tab
+              className="capitalize font-bold text-zinc-900 "
+              label="Overview"
+              {...a11yProps(0)}
+            />
+            <Tab
+              className="capitalize font-bold text-zinc-900 "
+              label="Fundamentals"
+              {...a11yProps(1)}
+            />
+            <Tab
+              className="capitalize font-bold text-zinc-900 "
+              label="News Insights"
+              {...a11yProps(2)}
+            />
+            <Tab
+              className="capitalize font-bold text-zinc-900 "
+              label="Sentiments"
+              {...a11yProps(3)}
+            />
+            <Tab
+              className="capitalize font-bold text-zinc-900 "
+              label="Team"
+              {...a11yProps(4)}
+            />
+            <Tab
+              className="capitalize font-bold text-zinc-900 "
+              label="Technicals"
+              {...a11yProps(5)}
+            />
+            <Tab
+              className="capitalize font-bold text-zinc-900 "
+              label="Tokenomics"
+              {...a11yProps(6)}
+            />
+          </Tabs>
+        </div>
       </Box>
       <CustomTabPanel value={value} index={0}>
         <div className="bg-white text-black rounded-lg">
