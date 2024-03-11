@@ -18,7 +18,7 @@ function Chart() {
         <div>
           <Tabs />
         </div>
-        <div>
+        <div className="overflow-hidden">
           <Sentiments />
         </div>
         <div>

@@ -1,6 +1,6 @@
 export default function Sentiments() {
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg">
+    <div className="max-w-full p-6 bg-white rounded-lg">
       <h2 className="text-xl font-semibold flex items-center gap-2">
         <span>Sentiment</span>
       </h2>
@@ -8,8 +8,8 @@ export default function Sentiments() {
         Key Events
         <i class="ri-information-fill"></i>
       </h3>
-      <div className="grid grid-cols-2 gap-4">
-        <div className="bg-blue-100 rounded-lg p-4 flex">
+      <div className="flex max-md:flex-col gap-4 max-md:w-fit max-md:h-48 max-md:overflow-y-scroll">
+        <div className="bg-blue-100 rounded-lg p-4 flex max-md:h-46 ">
           <div className="flex-shrink-0">
             <TextIcon className="text-blue-500" />
           </div>
@@ -18,7 +18,7 @@ export default function Sentiments() {
               Lorem ipsum dolor sit amet consectetur. Dui vel quis dignissim
               mattis enim tincidunt.
             </p>
-            <p className="text-sm mt-2">
+            <p className="text-sm mt-2 max-md:text-xs">
               Lorem ipsum dolor sit amet consectetur. Ac phasellus risus est
               faucibus metus quis. Amet sapien quam viverra adipiscing
               condimentum. Ac consectetur et pretium in a bibendum in. Sed vitae
