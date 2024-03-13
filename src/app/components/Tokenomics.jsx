@@ -3,8 +3,8 @@ import Piecircle from "./Piecircle";
 
 function Tokenomics() {
   return (
-    <div className="bg-white rounded-lg text-black mt-4">
-      <div className="max-w-4xl mx-auto my-8 p-6 bg-white rounded-lg">
+    <div className="bg-white rounded-lg text-black mt-4 max-md:hidden">
+      <div className="max-w-fit my-8 p-6 bg-white rounded-lg">
         <h2 className="text-2xl font-bold mb-4">Tokenomics</h2>
         <h3 className="text-xl font-semibold mb-6">Initial Distribution</h3>
         <div className=" -ml-48 my-4">
