@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Tradingchart from "./Tradingchart";
-import Image from "next/image";
 
 function TradingViewWidget() {
   const [data, setData] = useState(null);
@@ -32,7 +31,7 @@ function TradingViewWidget() {
         <div className="relative">
           <div className="flex items-center gap-2 p-5 max-md:absolute max-md:-top-20 max-md:px-3">
             <div className="h-8 w-8">
-              <Image
+              <img
                 src="https://cryptologos.cc/logos/bitcoin-btc-logo.png"
                 alt=""
               />

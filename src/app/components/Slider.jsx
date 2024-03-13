@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -43,7 +42,7 @@ export default function App() {
                 <SwiperSlide key={index}>
                   <div className="border-[1px] border-zinc-400 rounded-md w-fit max-md:w-[45vw] p-3 pr-8">
                     <div className="flex items-center gap-2">
-                      <Image
+                      <img
                         className="h-5 w-5 rounded-full object-cover"
                         src={`${item?.item?.small}`}
                         alt="logo"
@@ -66,7 +65,7 @@ export default function App() {
                     </div>
                     <h3 className="font-bold my-2">{item.item.data.price}</h3>
                     <div className="h-10 w-fit">
-                      <Image src={item.item.data.sparkline} alt="graph" />
+                      <img src={item.item.data.sparkline} alt="graph" />
                     </div>
                   </div>
                 </SwiperSlide>
