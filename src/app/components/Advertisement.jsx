@@ -4,7 +4,7 @@ function Advertisement() {
   return (
     <div className="bg-blue-600 text-white py-10 max-md:mx-4 px-5 rounded-xl flex items-center justify-center flex-col">
       <img
-        className=" md:hidden"
+        className="md:hidden"
         src={
           "https://xgjzloifyvgpbmyonaya.supabase.co/storage/v1/object/public/files/lgvfhTYfFX/P3lGFupAHK"
         }
@@ -17,7 +17,7 @@ function Advertisement() {
         to be more educated and aware of your tax reports.
       </p>
       <img
-        className=" max-md:hidden"
+        className="max-md:hidden"
         src={
           "https://xgjzloifyvgpbmyonaya.supabase.co/storage/v1/object/public/files/lgvfhTYfFX/P3lGFupAHK"
         }

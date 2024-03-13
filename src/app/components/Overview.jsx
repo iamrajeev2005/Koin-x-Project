@@ -1,6 +1,9 @@
+import { useEffect } from "react";
+
 export default function Component() {
+ 
   return (
-    <div className="max-w-4xl mx-auto px-6 bg-white rounded-lg">
+    <div className="max-w-full px-6 bg-white rounded-lg">
       <div className="bg-white pb-6 rounded-lg ">
         <h2 className="text-2xl font-semibold flex items-center text-zinc-800 py-4">
           Performance
