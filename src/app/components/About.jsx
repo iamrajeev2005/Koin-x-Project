@@ -52,7 +52,7 @@ function About() {
               <img
                 alt="Investing"
                 className="rounded-lg h-[16vh] w-[10vw] max-md:w-[30vw] m-3"
-                src="https://imgs.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://cdn.pixabay.com/photo/2016/12/13/22/15/chart-1905224_960_720.jpg"
                 style={{
                   aspectRatio: "80/80",
                   objectFit: "cover",
@@ -75,7 +75,7 @@ function About() {
               <img
                 alt="Investing"
                 className="rounded-lg h-[16vh] w-[10vw] m-3 max-md:w-[30vw]"
-                src="https://imgs.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://cdn.pixabay.com/photo/2016/12/13/22/15/chart-1905224_960_720.jpg"
                 style={{
                   aspectRatio: "80/80",
                   objectFit: "cover",
