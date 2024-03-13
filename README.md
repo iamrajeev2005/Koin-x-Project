@@ -77,5 +77,4 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 ## <a name="links">🔗 Links</a>
 
-- [Design]([https://drive.google.com/file/d/15WJMOchujvaQ7Kg9e0nGeGR7G7JOeX1K/view?usp=sharing](https://www.figma.com/file/VRj5MqVPoQdj5N7AwmYc98?embed_host=notion&kind=file&mode=design&node-id=0-1&t=x8gdUiF5gA3sjRd3-0&type=design&viewer=1))
-- [Live Website]()
+- [Live Website](https://koin-x-project-plum.vercel.app/)
