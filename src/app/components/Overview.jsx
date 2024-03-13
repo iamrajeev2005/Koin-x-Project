@@ -10,8 +10,8 @@ export default function Component() {
         </h2>
         <div className="space-y-1">
           <div className="flex justify-between items-center">
-            <span className="text-sm font-medium">Today's Low</span>
-            <span className="text-sm font-medium">Today's High</span>
+            <span className="text-sm font-medium">Today&apos;s Low</span>
+            <span className="text-sm font-medium">Today&apos;s High</span>
           </div>
           <div className="relative">
             <div className="mx-24 h-1 rounded-full bg-gradient-to-r from-red-500 to-green-500"></div>

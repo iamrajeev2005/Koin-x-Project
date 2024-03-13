@@ -9,6 +9,7 @@ function Advertisement() {
         src={
           "https://xgjzloifyvgpbmyonaya.supabase.co/storage/v1/object/public/files/lgvfhTYfFX/P3lGFupAHK"
         }
+        alt=""
       />
       <h1 className="font-bold text-xl w-[70%] max-md:w-full text-center leading-9 pb-4">
         Get Started with KoinX for FREE
@@ -22,6 +23,7 @@ function Advertisement() {
         src={
           "https://xgjzloifyvgpbmyonaya.supabase.co/storage/v1/object/public/files/lgvfhTYfFX/P3lGFupAHK"
         }
+        alt=""
       />
       <button className="py-2 px-4 bg-white text-zinc-900 font-bold rounded-lg">
         Get Started for FREE <i className="ri-arrow-right-line"></i>

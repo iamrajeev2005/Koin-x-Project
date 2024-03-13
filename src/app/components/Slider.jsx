@@ -41,11 +41,8 @@ export default function App() {
             {Footer.map((item, index) => {
               return (
                 <SwiperSlide>
-                  <div
-                    key={index}
-                    className="border-[1px] border-zinc-400 rounded-md w-fit max-md:w-[45vw] p-3 pr-8"
-                  >
-                    <div className="flex items-center gap-2">
+                  <div className="border-[1px] border-zinc-400 rounded-md w-fit max-md:w-[45vw] p-3 pr-8">
+                    <div key={index} className="flex items-center gap-2">
                       <Image
                         className="h-5 w-5 rounded-full object-cover"
                         src={`${item?.item?.small}`}
