@@ -1,6 +1,7 @@
 import Chart from "./components/Chart";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Rightsidebar from "./components/Rightsidebar";
 
 export default function Home() {
   return (
@@ -10,6 +11,9 @@ export default function Home() {
         <Chart />
       </div>
       <Footer />
+      <div className="md:hidden">
+        <Rightsidebar />
+      </div>
     </div>
   );
 }

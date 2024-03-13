@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Slider from "./Slider";
+import Rightsidebar from "./Rightsidebar";
 
 function Footer() {
   const [Footer, setFooter] = useState(null);
@@ -10,7 +11,6 @@ function Footer() {
     );
     const data = await response.json();
     const topCoins = data?.coins;
-    console.log(topCoins);
     setFooter(topCoins);
   };
 

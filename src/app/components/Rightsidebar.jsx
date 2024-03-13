@@ -4,7 +4,7 @@ import Trendingcoins from "./Trendingcoins";
 
 function Rightsidebar() {
   return (
-    <div className=" max-md:hidden">
+    <div className="">
       <Advertisement />
       <Trendingcoins />
     </div>

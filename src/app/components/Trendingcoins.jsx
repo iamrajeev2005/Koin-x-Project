@@ -8,7 +8,6 @@ function Trendingcoins() {
       `https://api.coingecko.com/api/v3/search/trending`
     );
     const data = await response.json();
-    // console.log(data?.coins);
     const topCoins = data?.coins;
     const top3Coins = topCoins.slice(0, 3);
     setTrending(top3Coins);
@@ -25,7 +24,6 @@ function Trendingcoins() {
             Trending Coins (24H)
           </h1>
           {trending.map((item, index) => {
-            console.log(item);
             return (
               <div
                 key={index}

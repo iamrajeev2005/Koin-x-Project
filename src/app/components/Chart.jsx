@@ -31,7 +31,7 @@ function Chart() {
           <Team />
         </div>
       </div>
-      <div className="w-[30%] h-[40vh]">
+      <div className="w-[30%] h-[40vh] max-md:hidden">
         <Rightsidebar />
       </div>
     </div>

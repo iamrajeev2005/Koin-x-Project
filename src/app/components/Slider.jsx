@@ -16,7 +16,6 @@ export default function App() {
     );
     const data = await response.json();
     const topCoins = data?.coins;
-    console.log(topCoins);
     setFooter(topCoins);
   };
 
