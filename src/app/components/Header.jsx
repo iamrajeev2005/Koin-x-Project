@@ -1,11 +1,12 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 function Header() {
   return (
     <div className="w-screen h-20 bg-white flex items-center justify-between px-12 max-md:px-5">
       <div className="logo w-28 ">
-        <img
+        <Image
           src="https://app.koinx.com/static/media/Logo.3331aa2fc2f35c00e58921b44a2ebf0d.svg"
           alt="logo"
         />

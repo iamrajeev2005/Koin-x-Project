@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function About() {
   return (
@@ -49,7 +50,7 @@ function About() {
         <div className="flex max-md:flex-col justify-between items-center space-x-4 max-md:-space-x-2">
           <div className="h-[20vh] w-[30vw] max-md:w-full max-md:my-4 rounded-lg bg-gradient-to-br from-green-500 to-blue-500 text-white">
             <div className="flex items-center justify-start">
-              <img
+              <Image
                 alt="Investing"
                 className="rounded-lg h-[16vh] w-[10vw] max-md:w-[30vw] m-3"
                 src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -72,7 +73,7 @@ function About() {
           </div>
           <div className="h-[20vh] w-[30vw] max-md:w-full max-md:-ml-5 rounded-lg bg-gradient-to-br from-red-400 to-red-800 text-white">
             <div className="flex items-center justify-start ">
-              <img
+              <Image
                 alt="Investing"
                 className="rounded-lg h-[16vh] w-[10vw] m-3 max-md:w-[30vw]"
                 src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

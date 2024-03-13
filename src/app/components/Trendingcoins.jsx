@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 function Trendingcoins() {
   const [trending, setTrending] = useState(null);
@@ -30,7 +31,7 @@ function Trendingcoins() {
                 className="flex items-center justify-between pb-3"
               >
                 <div className="flex items-center justify-start pb-3 gap-2">
-                  <img
+                  <Image
                     className="h-5 w-5 rounded-full object-cover"
                     src={`${item?.item?.small}`}
                     alt="logo"

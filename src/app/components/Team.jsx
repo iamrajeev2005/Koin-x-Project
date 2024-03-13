@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function Team() {
   return (
@@ -15,7 +16,7 @@ function Team() {
             <div className="flex items-center flex-col space-x-4 mb-4">
               <div className="flex items-center gap-3 max-md:gap-2 flex-col">
                 <div className="rounded-lg overflow-hidden">
-                  <img
+                  <Image
                     className="h-[15vh] w-[7vw] max-md:w-[30vw] object-cover"
                     alt="John Smith"
                     src="https://avatars.pfptown.com/426/luffy-pfp-905.png"
@@ -45,7 +46,7 @@ function Team() {
             <div className="flex items-center flex-col space-x-4 mb-4">
               <div className="flex items-center gap-3 max-md:gap-2 flex-col">
                 <div className="rounded-lg overflow-hidden">
-                  <img
+                  <Image
                     className="h-[15vh] w-[7vw] max-md:w-[30vw] object-cover"
                     alt="John Smith"
                     src="https://avatars.pfptown.com/426/luffy-pfp-905.png"
@@ -75,7 +76,7 @@ function Team() {
             <div className="flex items-center flex-col space-x-4 mb-4">
               <div className="flex items-center gap-3 max-md:gap-2 flex-col">
                 <div className="rounded-lg overflow-hidden">
-                  <img
+                  <Image
                     className="h-[15vh] w-[7vw] max-md:w-[30vw] object-cover"
                     alt="John Smith"
                     src="https://avatars.pfptown.com/426/luffy-pfp-905.png"
