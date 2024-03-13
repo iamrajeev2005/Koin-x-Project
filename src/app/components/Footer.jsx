@@ -20,7 +20,7 @@ function Footer() {
   return (
     <>
       {Footer && (
-        <div className="w-screen  bg-white mt-10 flex flex-col items-start gap-6 p-4">
+        <div className="w-screen bg-white mt-10 flex flex-col items-start gap-6 p-4">
           <h1 className="text-xl px-4 font-bold -mb-12">You May Also Like</h1>
           <Slider />
           <h1 className="text-xl px-4 font-bold -mb-10">Trending Coins</h1>

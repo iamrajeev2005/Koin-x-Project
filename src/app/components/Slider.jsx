@@ -23,14 +23,15 @@ export default function App() {
   useEffect(() => {
     getTrending();
   }, []);
-
   return (
     <>
       <Swiper
         onSwiper={setSwiperRef}
-        slidesPerView={6}
+        slidesPerView={
+          window.innerWidth < 768 ? 2 : window.innerWidth < 1024 ? 4 : 6
+        }
         centeredSlides={false}
-        spaceBetween={10}
+        spaceBetween={8}
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
@@ -42,7 +43,7 @@ export default function App() {
                 <SwiperSlide>
                   <div
                     key={index}
-                    className="border-[1px] border-zinc-400 rounded-md w-fit p-3 pr-8"
+                    className="border-[1px] border-zinc-400 rounded-md w-fit max-md:w-[45vw] p-3 pr-8"
                   >
                     <div className="flex items-center gap-2">
                       <img
